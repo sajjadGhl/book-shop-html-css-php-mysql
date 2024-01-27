@@ -1,0 +1,77 @@
+.container {
+    position: relative;
+    justify-content: left;
+}
+
+.container .content {
+    width: 80%;
+}
+
+.content .success {
+    background-color: var(--success);
+}
+
+.content .error {
+    background-color: var(--error);
+}
+
+.content .success,
+.content .error {
+    color: var(--white);
+    padding: 1rem 2rem;
+    text-align: center;
+    width: 80%;
+    margin: 3rem auto -1rem;
+    border-radius: 0.3rem;
+}
+
+.content .posts {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    gap: 1rem;
+}
+
+.posts .post {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.6);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.post .title {
+    white-space: nowrap;
+    width: clamp(10rem, max-content, max-content);
+    font-size: 1em;
+}
+
+.post .desc {
+    display: -webkit-box;
+    height: 1.3em;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.7em;
+    width: clamp(40rem, 50rem, 55rem);
+}
+
+.post a {
+    color: var(--dark-gray);
+    background-color: var(--white);
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.3rem;
+    transition: all 0.3s 0.1s;
+}
+
+.post a:hover {
+    color: var(--white);
+    background-color: var(--dark-gray);
+}
+
+.post img {
+    width: clamp(5rem, 5rem, 5rem);
+    height: clamp(6rem, 7rem, 8rem);
+}

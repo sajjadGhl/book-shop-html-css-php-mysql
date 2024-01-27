@@ -1,0 +1,52 @@
+body .container {
+    height: clamp(80vh, 90vh, 100vh);
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 5rem;
+    margin: 1rem auto 0;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.7);
+}
+
+.container .error {
+    background-color: red;
+    color: var(--white);
+    padding: 1rem;
+    border-radius: 0.3rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.form input {
+    padding: 0.3rem 0.6rem;
+    outline: 0;
+    direction: ltr;
+}
+
+.form input::placeholder {
+    text-align: right;
+}
+
+.form button {
+    padding: 0.3rem 0.6rem;
+    background-color: transparent;
+    border: 0;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+    transition: all 0.3s;
+}
+.form button:hover {
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
+}
+
+.form a {
+    color: var(--gray);
+    margin-top: 1rem;
+}
+

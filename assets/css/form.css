@@ -1,0 +1,51 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 3rem;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.7);
+    padding: 3rem;
+    width: 35%;
+    border-radius: 0.5rem;
+    margin-bottom: 3rem;
+}
+
+.form .success,
+.form .failure {
+    padding: 1rem;
+    border-radius: 0.3rem;
+    color: var(--white);
+}
+
+.form .success {
+    background-color: var(--success);
+}
+
+.form .failure {
+    background-color: var(--error);
+}
+
+.form-item {
+    width: 20rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-item label {
+    cursor: pointer;
+}
+.form-item input {
+    padding: 0.3rem 0.6rem;
+    outline: 0;
+    transition: all 0.3s;
+}
+
+.form-item input:focus {
+    border: 1px solid #000;
+    border-radius: 0.1rem;
+}
+
+.form input[type="submit"] {
+    padding: 0.2rem 0.4rem;
+    cursor: pointer;
+}

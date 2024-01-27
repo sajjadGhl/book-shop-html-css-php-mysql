@@ -1,0 +1,75 @@
+.container {
+    margin: auto;
+}
+
+.container .content {
+    width: 80%;
+}
+
+.content .success,
+.content .error {
+    margin: 1rem auto;
+    padding: 1rem 2rem;
+    border-radius: 0.3rem;
+    width: 25rem;
+    text-align: center;
+    color: var(--white);
+}
+
+.content .success {
+    background-color: var(--success);
+}
+.content .error {
+    background-color: var(--error);
+}
+
+.content .add-post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 0 0.7rem rgba(0, 0, 0, 0.5);
+    width: 25rem;
+    padding: 2rem;
+    border-radius: 0.3rem;
+    margin: auto;
+}
+
+.content input,
+.content textarea,
+.content label {
+    min-width: 20rem;
+    max-width: 20rem;
+    min-height: 2rem;
+    max-height: 10rem;
+    padding: 0.3rem 0.6rem;
+    outline: 0;
+    transition: all 0.3s;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content label select {
+    width: 80%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.content input:focus,
+.content textarea:focus {
+    border: 2px solid #000;
+}
+
+.add-post .btn {
+    width: 10rem;
+}
+
+input[type='file'] {
+    text-align: center;
+    cursor: pointer;
+}
+
+input[type='submit'] {
+    cursor: pointer;
+}

@@ -1,0 +1,9 @@
+:root {
+    --dark-gray: #222831;
+    --gray: #393E46;
+    --blue: #00ADB5;
+    --white: #EEEEEE;
+    --dark-white: #CCCCCC;
+    --error: rgba(213, 26, 26, 0.8);
+    --success: rgba(0, 97, 0, 0.8);
+}

@@ -1,0 +1,71 @@
+.cart {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart .right {
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    padding: 1rem;
+    align-self: stretch;
+    margin: 1rem 0 1rem -8rem;
+}
+
+.cart .left {
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.left .items {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    margin: 2rem auto;
+}
+
+.items .item {
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    border-radius: 0.3rem;
+    overflow: hidden;
+}
+
+.item .item-info {
+    padding: 1rem;
+}
+
+.item-info div span {
+    color: var(--gray);
+}
+
+.cart .cart-total-price::after,
+.item .item-price::after,
+.item .item-total-price::after {
+    content: ' ریال';
+    color: var(--dark-gray);
+    font-size: 0.7em;
+    font-style: italic;
+}
+
+
+.item img {
+    width: 15rem;
+    height: 20rem;
+}
+
+.success {
+    background-color: var(--success);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+}
+
+.buttons button {
+    padding: 0 0.8rem;
+}

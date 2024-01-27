@@ -1,0 +1,69 @@
+.container {
+    position: relative;
+    justify-content: left;
+}
+
+.container .content {
+    width: 80%;
+}
+
+.content .purchases {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    gap: 1rem;
+}
+.purchases .info {
+    background-color: var(--gray);
+    color: var(--white);
+}
+.purchases .purchase {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 5rem;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.6);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.purchase .title {
+    white-space: nowrap;
+    width: clamp(10rem, max-content, max-content);
+    font-size: 1em;
+}
+
+.purchase .price::after {
+    content: ' ریال ';
+}
+
+.purchase a {
+    color: var(--dark-gray);
+    background-color: var(--white);
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.3rem;
+    transition: all 0.3s 0.1s;
+}
+
+.purchase a:hover {
+    color: var(--white);
+    background-color: var(--dark-gray);
+}
+
+.purchase img {
+    width: clamp(5rem, 5rem, 5rem);
+    height: clamp(6rem, 7rem, 8rem);
+}
+
+.purchase * {
+    flex-basis: 8rem;
+}
+
+.purchase.report div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-basis: 15rem;
+}

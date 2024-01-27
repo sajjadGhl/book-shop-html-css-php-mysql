@@ -1,0 +1,124 @@
+@import url('./_settings.css');
+@import url('./_fonts.css');
+@import url('./_variables.css');
+
+.btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border: 0;
+    border-radius: 0.3rem;
+}
+
+.container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/* Start Header */
+.header {
+    width: 100%;
+}
+
+.header .top-header {
+    width: 100%;
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 3rem;
+}
+
+.top-header .logo {
+    width: 8rem;
+    height: 8rem;
+    overflow: hidden;
+}
+
+.top-header .top-header-title {
+    display: block;
+    font-size: 3rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s;
+}
+
+.top-header .top-header-title:hover {
+    background-color: var(--gray);
+}
+
+.top-header .cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.cart .welcome {
+    min-width: max-content;
+    background-color: var(--dark-gray);
+    color: var(--white);
+    text-align: center;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+}
+
+.cart .cart-btn {
+    color: var(--dark-gray);
+    background-color: var(--dark-white);
+    transition: all 0.3s;
+}
+
+.cart .cart-btn:hover {
+    background-color: var(--gray);
+    color: var(--white);
+}
+
+.cart-btn img {
+    width: 2rem;
+}
+
+.cart-btn p {
+    margin: 0 0.5rem;
+}
+
+.header .header-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+    background-color: var(--gray);
+}
+
+.header-list a {
+    color: var(--white);
+    padding: 0.95rem 2rem;
+    transition: all 0.3s;
+}
+
+.header-list li:hover a {
+    background-color: var(--dark-gray);
+    box-shadow: 0 1px 0.2rem rgba(185, 180, 199, 0.8);
+}
+/* End Header */
+
+/* Start Footer */
+body .footer {
+    background-color: var(--dark-gray);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+}
+/* End Footer */

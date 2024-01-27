@@ -1,0 +1,37 @@
+.container {
+    width: 100%;
+}
+
+.container .panel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--dark-gray);
+    width: 15rem;
+}
+
+.panel .items {
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    padding: 3rem;
+    gap: 1rem;
+}
+
+.items .item {}
+
+.items .item:hover {
+    text-decoration: underline;
+}
+
+.items .active {
+    color: var(--blue);
+}
+
+.item a {
+    color: inherit;
+}
+
+.container .content {
+}
